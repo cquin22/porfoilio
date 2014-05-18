@@ -8,18 +8,59 @@
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
     <title>Cristian Quintero | Front end Developer</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+     <link rel="stylesheet" href="css/personales.css" />
+    <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body ng-app="webappApp">
+  <body >
     
-    <div class="container" ng-view=""></div>
+    <header >
+      <figure class="logo">
+        <img src="img/logo-light.png">
+      </figure>
+      <nav>
+        <ul>
+          <a class="menu" href=""><li>Mi Perfil</li></a>
+          <a class="menu" href=""><li>Competencias</li></a>
+          <a class="menu" href=""><li>Portafolio</li></a>
+          <a class="menu" href=""><li>Blog</li></a>
+          <a class="menu" href=""><li>Contáctame</li></a>  
+          <a class="face" href=""><li ><span class="icon-facebook5"></span></li></a>
+          <a class="twitter" href=""><li ><span class="icon-social19"></span></li></a>
+          <a class="google" href=""><li ><span class="icon-google10"></span></li></a>
+          <a  href=""><li ></li></a>
+
+        </ul>
+      </nav>  
+    </header>
+    <section>
+      <div class="large-9 columns banner">
+        <figure class="large-6 columns banner">
+          <img src="img/cristian.png">
+        </figure>
+        <div class="large-6 columns banner">
+          <h1>Developer</h1>
+          <p>Subtitle</p>
+        </div>  
+      </div>
+      <div class="large-3 columns aside">
+        texto
+      </div>
+    </section>
+    <section>
+      <figure>
+        <img src="img/layout-code.jpg">
+      </figure>
+      <div class="competencias">
+        temporal
+      </div>  
+    </section>
     
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+
     <script>
       $(document).foundation();
+
     </script>
   </body>
 </html>
