@@ -378,6 +378,9 @@ td,
 th {
   padding: 0;
 }
+body {
+  font-family: 'Raleway', sans-serif;
+}
 header {
   background: #272822;
   height: 70px;
@@ -475,4 +478,48 @@ figure {
 .google:hover {
   background: #cb4437;
   color: #fff;
+}
+.banner h1 {
+  font-size: 6em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.banner p {
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+.section-banner {
+  height: auto;
+}
+.aside {
+  background: #272822;
+  height: 371px;
+  position: relative;
+}
+.aside h3 {
+  color: #fff;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+.aside p {
+  color: #fff;
+}
+.flecha-back {
+  position: absolute;
+  left: -34px;
+  top: 50%;
+  height: 50px;
+  margin-top: -25px;
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.flecha-back span {
+  font-size: 5em;
 }
