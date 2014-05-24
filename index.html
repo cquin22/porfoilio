@@ -11,9 +11,9 @@
      <link rel="stylesheet" href="css/personales.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body >
-    
-    <header >
+  <body  >
+  <div class="scrollblock" >  
+    <header id="Header" >
       <figure class="logo">
         <img src="img/logo-light.png">
       </figure>
@@ -32,7 +32,7 @@
         </ul>
       </nav>  
     </header>
-    <section class="section-banner"  >
+    <section id="Banner" class="section-banner"  >
       <div  class="large-9 columns banner" data-equalizer-watch>
         <figure class="large-4 columns banner">
           <img src="img/cristian.png">
@@ -64,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="Perfil" class="perfil">
       <figure>
         <img src="img/layout-code.jpg">
       </figure>
@@ -72,9 +72,15 @@
         temporal
       </div>  
     </section>
-    
-    <script src="js/vendor/jquery.js"></script>
+
+
+  </div>
+   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.lettering-0.6.1.min.js"></script>
+    <script src="js/vendor/jquery.scrollorama.js"></script>
+    <script src="js/personales.js"></script>
 
     <script>
       $(document).foundation();
