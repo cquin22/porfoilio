@@ -1,0 +1,156 @@
+@import 'nib' 
+@import 'iconografia.styl'
+@import 'normalize.styl'
+vendor-prefixes = webkit o ms moz official
+// animacion(parametro)
+// -webkit-animation parametro
+// -moz-animation parametro
+// -o-animation parametro
+// -ms-animation parametro
+// animation parametro
+// font-family: 'Yanone Kaffeesatz', sans-serif;
+// font-family: 'Raleway', sans-serif;
+//font-family: 'Shadows Into Light Two', cursive;
+
+color-cafe-sublime = #272822
+color-azul-principal = #197AA5
+color-amarillo-secundario = #FFE600
+color-facebook = #3b5998
+color-twitter = #4fa1d3
+color-google = #cb4437	
+
+body
+	font-family: 'Raleway', sans-serif	
+
+header 
+	background color-cafe-sublime
+	height 70px
+	width 100%
+	//top 0
+	position relative
+	overflow hidden
+	//z-index 99999999999
+
+nav
+	position absolute
+	top 0
+	right 0
+	margin 0
+	padding 0
+	ul 
+		list-style none
+		margin 0
+		padding 0
+		li 
+			display inline-block
+						
+		
+figure 
+	margin 0
+	padding 0		
+
+.logo 
+	margin 0
+	height 70px
+	img
+		height 50px
+		position absolute
+		top 50%
+		left 2px
+		margin-top -25px
+
+.menu
+	background color-azul-principal
+	color white
+	margin-right -3px
+	height 70px
+	line-height 70px
+	padding 23px 29px
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size 20px
+	font-weight lighter
+	&:hover
+		background color-amarillo-secundario
+		color color-cafe-sublime
+
+.face 
+	background #222
+	padding 30px 29px
+	margin-right -3px
+	height 70px
+	line-height 70px	
+	color white
+
+	margin-top -10px
+	span 
+		font-size 20px
+		
+	&:hover
+		background color-facebook
+		color white
+
+
+.twitter 
+	background #222
+	padding 30px 29px
+	margin-right -3px
+	color white
+	height 70px
+	line-height 70px
+	span 
+		font-size 20px			
+	&:hover
+		background color-twitter
+		color white
+
+.google 
+	background #222
+	padding 30px 29px
+	margin-right -3px
+	color white
+	height 70px
+	line-height 70px
+	span 
+		font-size 20px		
+	&:hover
+		background color-google
+		color white
+
+
+.banner
+	h1 
+		font-size 6em
+		font-family 'Raleway', sans-serif
+		font-weight bold
+		margin 0
+		padding 0
+	p 
+		font-size 3em
+		font-family 'Raleway', sans-serif
+		font-weight lighter
+		margin 0
+		padding 0
+
+.section-banner
+	height auto
+
+
+.aside
+	background color-cafe-sublime
+	height 371px
+	position relative
+	h3 
+		color white
+		font-family: 'Shadows Into Light Two', cursive;
+	p 
+		color white
+
+.flecha-back
+	position absolute
+	left -34px
+	top 50%
+	height 50px
+	margin-top -25px
+	transform rotate(90deg)
+	span 
+		font-size 5em
