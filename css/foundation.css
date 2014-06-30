@@ -2290,8 +2290,9 @@ meta.foundation-mq-topbar {
   .orbit-container .orbit-bullets {
     margin: 0 auto 30px auto;
     overflow: hidden;
-    position: relative;
-    top: 10px;
+    position: absolute;
+    bottom: -18px;
+    left: 20px;
     float: none;
     text-align: center;
     display: block; }

@@ -479,6 +479,21 @@ figure {
   background: #cb4437;
   color: #fff;
 }
+.icon-menu {
+  background: #197aa5;
+  padding: 30px 29px;
+  margin-right: -3px;
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+}
+.icon-menu span {
+  font-size: 20px;
+}
+.icon-menu:hover {
+  background: #ffe600;
+  color: #272822;
+}
 .banner h1 {
   font-size: 6em;
   font-family: 'Raleway', sans-serif;
@@ -498,15 +513,32 @@ figure {
 }
 .aside {
   background: #272822;
-  height: 371px;
+  height: 373px;
   position: relative;
 }
 .aside h3 {
   color: #fff;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 .aside p {
   color: #fff;
+}
+.franja-azul {
+  height: 41px;
+  width: 47%;
+  float: left;
+  background: #197aa5;
+}
+.franja-mitad {
+  float: left;
+  width: 6%;
+  margin: 0;
+}
+.franja-amarilla {
+  height: 41px;
+  width: 47%;
+  float: left;
+  background: #ffe600;
 }
 .flecha-back {
   position: absolute;
@@ -522,4 +554,48 @@ figure {
 }
 .flecha-back span {
   font-size: 5em;
+}
+.perfil {
+  margin-top: -2px;
+}
+.image-code {
+  width: 30%;
+  float: left;
+  background: #272822;
+  padding: 1em;
+}
+.competencias {
+  width: 70%;
+  background: #197aa5;
+  float: left;
+}
+.bg-image-slide {
+  position: relative;
+}
+.bg-image-slide img {
+  width: 100%;
+  height: auto;
+}
+.textos-slide {
+  position: absolute;
+  height: 300px;
+  margin-top: -150px;
+  top: 50%;
+  left: 30%;
+  z-index: 1000000000000000000;
+}
+.textos-slide h1 {
+  font-size: 7em;
+  color: #fff;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+.textos-slide p {
+  color: #fff;
+  font-size: 1.5em;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5em;
+  color: #ffe600;
 }
