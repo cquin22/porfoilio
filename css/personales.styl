@@ -24,9 +24,10 @@ body
 	
 
 header 
-	background color-cafe-sublime
+	background rgba(color-cafe-sublime, 1)
 	height 70px
 	width 100%
+	transition all 1s ease-in
 	//top 0
 	position relative
 	overflow hidden
@@ -45,6 +46,8 @@ nav
 		li 
 			display inline-block
 						
+p 
+	font-size 16px
 		
 figure 
 	margin 0
@@ -61,18 +64,22 @@ figure
 		margin-top -25px
 
 .menu
-	background color-azul-principal
+	background #222
+	position fixed
+	z-index 500
+	top 70px
+	width 30%
+	right -100%
+	overflow hidden
+	height 100%
+	max-height 1600px
 	color white
 	margin-right -3px
-	height 70px
-	line-height 70px
 	padding 23px 29px
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size 20px
 	font-weight lighter
-	&:hover
-		background color-amarillo-secundario
-		color color-cafe-sublime
+
 
 .face 
 	background #222
@@ -133,6 +140,12 @@ figure
 		background color-amarillo-secundario
 		color color-cafe-sublime
 
+.bg-head
+	background url('../img/slides/slide2.jpg') center top
+	background-attachment fixed
+	background-size cover
+	width 100%
+	height 800px
 
 
 .banner
@@ -163,6 +176,11 @@ figure
 	p 
 		color white
 
+.bg-franjas
+	height 41px
+	position relative
+	background color-azul-principal
+
 .franja-azul
 	height 41px
 	width 47%
@@ -171,6 +189,9 @@ figure
 
 .franja-mitad
 	float left
+	height 41px
+	background url('../img/midle-colors.png') center center
+	background-size cover
 	width 6%
 	margin 0	
 
@@ -190,8 +211,84 @@ figure
 	span 
 		font-size 5em
 
-.perfil
-	margin-top -2px
+.miperfil	
+	padding 2em
+	overflow hidden
+	background url ('../img/layout-code.jpg')
+	background #333
+	box-shadow 1px 1px 10px 1px #222
+	h3 
+		color color-amarillo-secundario
+		font-family: 'Raleway', sans-serif;
+		font-weight bold
+		font-size 2em
+		text-shadow 1px 1px 1px black
+
+	p 
+		color white
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size 18px
+		font-weight lighter
+		margin 0
+
+.fortalezas
+	background url('../img/mosaico.jpg')
+
+.box
+	padding 1em
+	h3 
+		font-size 1em
+		color white
+	p 
+		color white
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size 18px
+		font-weight lighter
+		margin 0
+.dark 
+	background #222
+	position relative
+	&:after
+		position absolute
+		content "\e603"
+		font-family cquin22
+		font-size 50px
+		top 40%
+		color #333
+		left -19px
+		transform rotate(-90deg)
+	&:before
+		position absolute
+		content "\e603"
+		font-family cquin22
+		font-size 50px
+		top 40%
+		color #333
+		right -19px
+		transform rotate(90deg)
+.porfolio 
+	background color-azul-principal
+	padding 2em
+	overflow hidden
+	h3 
+		color color-amarillo-secundario
+		font-family: 'Raleway', sans-serif;
+		font-weight bold
+		font-size 2em
+		text-shadow 1px 1px 1px black
+	p 
+		color white
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size 18px
+		font-weight lighter
+		margin 0
+
+.box-portafolio
+	background rgba(white,0.1)
+	padding 2em
+	margin-bottom 1px
+	border-left 1px solid color-azul-principal
+	border-right 1px solid color-azul-principal
 
 .image-code
 	width 30%
@@ -213,20 +310,82 @@ figure
 .textos-slide
 	position absolute
 	height 300px
+	width 600px
 	margin-top -150px
 	top 50%
-	left 30%
-	z-index 999999999999999999
+	left 50%
+	margin-left -300px	
+	z-index 100
 	h1 
-		font-size 7em
+		font-size 6em
 		color white
 		margin 0
 		font-family: 'Raleway', sans-serif
 		font-weight bold
 		text-shadow 1px 1px 1px black
+		text-transform uppercase		
+		padding 0
+	h2 
+		font-size 6em
+		color white
+		margin 0
+		font-family: 'Raleway', sans-serif
+		font-weight bold
+		text-shadow 1px 1px 1px black
+		text-transform uppercase
+		margin-top 0px
+		padding 0			
 	p 
 		color white
 		font-size 1.5em
 		background rgba(black,0.5)
-		padding 0.5em 
+		padding 0.5em
+		margin-top 0px 
 		color color-amarillo-secundario				
+
+
+.top-fixed
+	position fixed
+	z-index 200
+	background rgba(color-cafe-sublime, 0.7)
+	top 0
+	left 0
+
+
+@media only screen and (min-width: 0px) and (max-width: 600px){
+
+.textos-slide {
+
+	width 300px
+	margin-left -150px
+}
+
+.textos-slide h1 {
+	font-size 2em
+
+}
+
+.textos-slide h2 {
+	font-size 3em
+
+}
+.bg-head {
+	background url('../img/slides/slide2.jpg') center top
+	background-size cover
+	width 100%
+	height 400px
+	}
+}
+
+
+@media only screen and (min-width: 806px) and (max-width: 900px){
+
+
+}
+
+
+@media only screen and (min-width: 901px) and (max-width: 1200px){
+
+
+	
+}			

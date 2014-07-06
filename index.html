@@ -11,14 +11,16 @@
      <link rel="stylesheet" href="css/personales.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body  >
+  <body class="myBody"  >
 
-<div style="display: none;" class="menu">
-  <a class="menu" href=""><li>Mi Perfil</li></a>
-  <a class="menu" href=""><li>Competencias</li></a>
-  <a class="menu" href=""><li>Portafolio</li></a>
-  <a class="menu" href=""><li>Blog</li></a>
-  <a class="menu" href=""><li>Contáctame</li></a> 
+<div id="Menu"  class="menu">
+  <ul>
+    <a  href=""><li>Mi Perfil</li></a>
+    <a  href=""><li>Competencias</li></a>
+    <a  href=""><li>Portafolio</li></a>
+    <a  href=""><li>Blog</li></a>
+    <a  href=""><li>Contáctame</li></a> 
+  </ul>
 </div>
 
   <div  >  
@@ -32,83 +34,96 @@
           <a class="face" href=""><li ><span class="icon-facebook5"></span></li></a>
           <a class="twitter" href=""><li ><span class="icon-social19"></span></li></a>
           <a class="google" href=""><li ><span class="icon-google10"></span></li></a>
-          <a class="icon-menu" href=""><li ><span class="icon-arrow299"></span></li></a>
+          <a id="LinkMenu" class="icon-menu " ><li  ><span class="icon-arrow299"></span></li></a>
           <a  href=""><li ></li></a>
 
         </ul>
       </nav>  
     </header>
-    <section>
-       <ul class="example-orbit-content" data-orbit>
-            <li data-orbit-slide="headline-1">
-              <figure class="bg-image-slide">
-                <img src="img/slides/slide1.jpg">
-              </figure>                         
-              <div class="textos-slide"> 
-                <h1>Developer</h1>
-                <p class="subtitle">Subtitle</p>
-              </div>
-            </li>
-            <li data-orbit-slide="headline-2">
-              <figure class="bg-image-slide">
-                <img src="img/slides/slide2.jpg">
-              </figure>                         
-              <div class="textos-slide"> 
-                <h1>Developer</h1>
-                <p class="subtitle">Subtitle</p>
-              </div>             
-            </li>
-          </ul>
-    </section>
-    <!--
-    <section id="Banner" class="section-banner"  >
-      <div  class="large-9 columns banner" data-equalizer-watch>
-        <figure class="large-4 columns banner">
-          <img src="img/cristian.png">
-        </figure>
-        <div  class="large-8 columns banner" >
-          <ul class="example-orbit-content" data-orbit>
-            <li data-orbit-slide="headline-1">
-              <h1>Developer</h1>
-              <p class="subtitle">Subtitle</p>
-            </li>
-            <li data-orbit-slide="headline-2">
-              <h1>Developer2</h1>
-              <p class="subtitle">Subtitle2</p>              
-            </li>
-            <li data-orbit-slide="headline-3">
-              <h1>Developer3</h1>
-              <p class="subtitle">Subtitle3</p>              
-            </li>
-          </ul>
-
-        </div>  
+    <section class="bg-head ">
+      <div class="textos-slide "> 
+        <center><h1>Frontend </h1><center><h2>Developer</h2></center>
+        <p class="show-for-small-up subtitle"> < > Apasionado por las nuevas tecnologías < /> </p>
       </div>
-      <div  class="large-3 columns aside" data-equalizer-watch>
-        <center><h3>Mi perfil</h3></center>
-        <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, Desarrollo de interfases web Adaptativas.</p>
-        <p>He tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como el Lean Canvas, y el Lean Startup. </p>
-        <div class="flecha-back">
-          <span class="icon-arrow486"></span>
+    </section>
+
+   
+    <section class="miperfil">
+        <div class="row">          
+          <center><h3><span class="icon-businessman65"></span>Mi Perfil</h3></center>
+          <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, Desarrollo de interfases web Adaptativas.
+          Tambien he tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como el Lean Canvas, y el Lean Startup. </p>          
         </div>
-      </div>
     </section>
-    <div>
-      <div class="franja-azul"></div>
-      <div class="franja-mitad"><img src="img/midle-colors.png"></div>
-      <div class="franja-amarilla"></div>
 
-    </div>
-    <section  class="perfil">
-      <figure class="image-code">
-        <img src="img/layout-code.jpg">
-      </figure>
-      <div class="competencias">
-        temporal
-      </div>  
+    <section class="miperfil">
+        <div class="row">
+          <div id="Anmleft" class="large-4 columns box ">
+            <center><h3>Mi perfil</h3></center>
+            <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, Desarrollo de interfases web Adaptativas.
+            He tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como el Lean Canvas, y el Lean Startup. </p>             
+          </div>
+          <div id="Anmcenter" class="large-4 columns box  dark">
+            <center><h3>Mi perfil</h3></center>
+            <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, Desarrollo de interfases web Adaptativas.
+            He tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como el Lean Canvas, y el Lean Startup. </p>             
+          </div>
+          <div id="Anmrigth" class="large-4 columns box ">
+            <center><h3>Mi perfil</h3></center>
+            <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, Desarrollo de interfases web Adaptativas.
+            He tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como el Lean Canvas, y el Lean Startup. </p>             
+          </div>                    
+         
+        </div>
     </section>
-    2500 x 1128
-    -->
+    <div class="bg-franjas">
+      <div class="franja-azul"></div>
+      <div class="franja-mitad"></div>
+      <div class="franja-amarilla"></div>       
+    </div>
+    <section class="porfolio">
+        <div class="large-4 columns">          
+          <center><h3><span class="icon-businessman65"></span>Portafolio</h3></center>
+          <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, Desarrollo de interfases web Adaptativas.
+          Tambien he tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como el Lean Canvas, y el Lean Startup. </p>          
+        </div>
+        <div class="large-8 columns">
+          <div class="large-12 columns ">
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>                                  
+          </div>
+          <div class="large-12 columns ">
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>                                  
+          </div>
+          <div class="large-12 columns ">
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>
+            <div class="large-4 columns box-portafolio">
+              <p>descripcion</p>
+            </div>                                  
+          </div>                    
+        </div>
+    </section>
+
 
   </div>
    

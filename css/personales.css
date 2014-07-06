@@ -385,6 +385,11 @@ header {
   background: #272822;
   height: 70px;
   width: 100%;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  transition: all 1s ease-in;
   position: relative;
   overflow: hidden;
 }
@@ -403,6 +408,9 @@ nav ul {
 nav ul li {
   display: inline-block;
 }
+p {
+  font-size: 16px;
+}
 figure {
   margin: 0;
   padding: 0;
@@ -419,19 +427,21 @@ figure {
   margin-top: -25px;
 }
 .menu {
-  background: #197aa5;
+  background: #222;
+  position: fixed;
+  z-index: 500;
+  top: 70px;
+  width: 30%;
+  right: -100%;
+  overflow: hidden;
+  height: 100%;
+  max-height: 1600px;
   color: #fff;
   margin-right: -3px;
-  height: 70px;
-  line-height: 70px;
   padding: 23px 29px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
   font-weight: lighter;
-}
-.menu:hover {
-  background: #ffe600;
-  color: #272822;
 }
 .face {
   background: #222;
@@ -494,6 +504,15 @@ figure {
   background: #ffe600;
   color: #272822;
 }
+.bg-head {
+  background: url("../img/slides/slide2.jpg") center top;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
 .banner h1 {
   font-size: 6em;
   font-family: 'Raleway', sans-serif;
@@ -523,6 +542,11 @@ figure {
 .aside p {
   color: #fff;
 }
+.bg-franjas {
+  height: 41px;
+  position: relative;
+  background: #197aa5;
+}
 .franja-azul {
   height: 41px;
   width: 47%;
@@ -531,6 +555,11 @@ figure {
 }
 .franja-mitad {
   float: left;
+  height: 41px;
+  background: url("../img/midle-colors.png") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   width: 6%;
   margin: 0;
 }
@@ -555,8 +584,102 @@ figure {
 .flecha-back span {
   font-size: 5em;
 }
-.perfil {
-  margin-top: -2px;
+.miperfil {
+  padding: 2em;
+  overflow: hidden;
+  background: url '../img/layout-code.jpg';
+  background: #333;
+  -webkit-box-shadow: 1px 1px 10px 1px #222;
+  box-shadow: 1px 1px 10px 1px #222;
+}
+.miperfil h3 {
+  color: #ffe600;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px #000;
+}
+.miperfil p {
+  color: #fff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0;
+}
+.fortalezas {
+  background: url("../img/mosaico.jpg");
+}
+.box {
+  padding: 1em;
+}
+.box h3 {
+  font-size: 1em;
+  color: #fff;
+}
+.box p {
+  color: #fff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0;
+}
+.dark {
+  background: #222;
+  position: relative;
+}
+.dark:after {
+  position: absolute;
+  content: "\e603";
+  font-family: cquin22;
+  font-size: 50px;
+  top: 40%;
+  color: #333;
+  left: -19px;
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.dark:before {
+  position: absolute;
+  content: "\e603";
+  font-family: cquin22;
+  font-size: 50px;
+  top: 40%;
+  color: #333;
+  right: -19px;
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.porfolio {
+  background: #197aa5;
+  padding: 2em;
+  overflow: hidden;
+}
+.porfolio h3 {
+  color: #ffe600;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px #000;
+}
+.porfolio p {
+  color: #fff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0;
+}
+.box-portafolio {
+  background: rgba(255,255,255,0.1);
+  padding: 2em;
+  margin-bottom: 1px;
+  border-left: 1px solid #197aa5;
+  border-right: 1px solid #197aa5;
 }
 .image-code {
   width: 30%;
@@ -579,23 +702,66 @@ figure {
 .textos-slide {
   position: absolute;
   height: 300px;
+  width: 600px;
   margin-top: -150px;
   top: 50%;
-  left: 30%;
-  z-index: 1000000000000000000;
+  left: 50%;
+  margin-left: -300px;
+  z-index: 100;
 }
 .textos-slide h1 {
-  font-size: 7em;
+  font-size: 6em;
   color: #fff;
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+  padding: 0;
+}
+.textos-slide h2 {
+  font-size: 6em;
+  color: #fff;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+  margin-top: 0px;
+  padding: 0;
 }
 .textos-slide p {
   color: #fff;
   font-size: 1.5em;
   background: rgba(0,0,0,0.5);
   padding: 0.5em;
+  margin-top: 0px;
   color: #ffe600;
+}
+.top-fixed {
+  position: fixed;
+  z-index: 200;
+  background: rgba(39,40,34,0.7);
+  top: 0;
+  left: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .textos-slide {
+    width: 300px;
+    margin-left: -150px;
+  }
+  .textos-slide h1 {
+    font-size: 2em;
+  }
+  .textos-slide h2 {
+    font-size: 3em;
+  }
+  .bg-head {
+    background: url("../img/slides/slide2.jpg") center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
 }
