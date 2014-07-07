@@ -10,7 +10,24 @@ function gogogo(){
     scrollorama.animate('#Anmrigth',{ duration: 500, property:'right', start:-1500,end:0});
 
   //$('#LinkMenu').on("click", animatemenu); 
-       
+ 
+var cambiosCSSboxIn = {background: "#5196b4"}
+var cambiosCSSscaleIn = {transform: "scale(1.1)",}
+
+var cambiosCSSboxOut = {background: "rgba(255,255,255,0.1)"}
+var cambiosCSSscaleOut = {transform: "scale(1.0)",}
+
+$('.box-portafolio').mouseover( function(){
+	$(this).css(cambiosCSSboxIn)
+	$(this).find(".img-por").css(cambiosCSSscaleIn);
+
+})
+.mouseout( function(){
+	$(this).css(cambiosCSSboxOut)
+	$(this).find(".img-por").css(cambiosCSSscaleOut); 
+});
+
+
 }
 
 
@@ -43,3 +60,5 @@ $("#LinkMenu").click( function(event){
 	}
 	return false;
 });
+
+//Animaciones hover portafolio

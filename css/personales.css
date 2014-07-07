@@ -451,6 +451,11 @@ figure {
   line-height: 70px;
   color: #fff;
   margin-top: -10px;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .face span {
   font-size: 20px;
@@ -466,6 +471,11 @@ figure {
   color: #fff;
   height: 70px;
   line-height: 70px;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .twitter span {
   font-size: 20px;
@@ -481,6 +491,11 @@ figure {
   color: #fff;
   height: 70px;
   line-height: 70px;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .google span {
   font-size: 20px;
@@ -496,6 +511,11 @@ figure {
   color: #fff;
   height: 70px;
   line-height: 70px;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .icon-menu span {
   font-size: 20px;
@@ -609,6 +629,29 @@ figure {
 .fortalezas {
   background: url("../img/mosaico.jpg");
 }
+.iconBig {
+  font-size: 50px;
+  color: #fff;
+  padding: 0.5em;
+  background: #197aa5;
+  margin-bottom: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.smallbutton {
+  color: #fff;
+  padding: 0.5em;
+  background: #5196b4;
+  position: relative;
+  top: 15px;
+  margin-left: 15px;
+}
+.smallbutton:hover {
+  color: franja-amarilla;
+  background: franja-amarilla;
+}
 .box {
   padding: 1em;
 }
@@ -674,12 +717,24 @@ figure {
   font-weight: lighter;
   margin: 0;
 }
+.img-por {
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
 .box-portafolio {
   background: rgba(255,255,255,0.1);
   padding: 2em;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   border-left: 1px solid #197aa5;
   border-right: 1px solid #197aa5;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .image-code {
   width: 30%;

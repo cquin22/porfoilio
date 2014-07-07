@@ -2291,15 +2291,16 @@ meta.foundation-mq-topbar {
     margin: 0 auto 30px auto;
     overflow: hidden;
     position: absolute;
-    bottom: -18px;
+    bottom: 0px;
+    
     left: 20px;
     float: none;
     text-align: center;
     display: block; }
     .orbit-container .orbit-bullets li {
       display: inline-block;
-      width: 0.5625rem;
-      height: 0.5625rem;
+      width: 1.5625rem;
+      height: 1.5625rem;
       background: #cccccc;
       float: none;
       margin-right: 6px;
