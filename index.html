@@ -15,11 +15,11 @@
 
 <div id="Menu"  class="menu">
   <ul>
-    <a  href=""><li>Mi Perfil</li></a>
-    <a  href=""><li>Competencias</li></a>
-    <a  href=""><li>Portafolio</li></a>
-    <a  href=""><li>Blog</li></a>
-    <a  href=""><li>Contáctame</li></a> 
+    <a class="limenus"  onclick="$('#sec1').animatescroll({padding: 20});"><li><span class="icon-user106"></span> Mi Perfil</li></a>
+    <a class="limenus"   onclick="$('#sec2').animatescroll({padding: 20});"><li><span class="icon-data45"></span> Competencias</li></a>
+    <a class="limenus"   onclick="$('#sec3').animatescroll({padding: 20});"><li><span class="icon-html10"></span> Portafolio</li></a>
+    <!--<a class="limenus" href=""><li>Blog</li></a>-->
+    <a class="limenus" href=""><li><span class="icon-email34"></span> Contáctame</li></a> 
   </ul>
 </div>
 
@@ -44,11 +44,12 @@
       <div class="textos-slide "> 
         <center><h1>Frontend </h1><center><h2>Developer</h2></center>
         <p class="show-for-small-up subtitle"> < > Apasionado por las nuevas tecnologías < /> </p>
+        <div id="sec1"></div>
       </div>
     </section>
 
    
-    <section class="miperfil">
+    <section id="sec2" class="miperfil">
         <div class="row">          
           <center><h3><span class="icon-businessman65"></span>Mi Perfil</h3></center>
             <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, y el desarrollo de interfaces web Adaptativas
@@ -57,7 +58,7 @@
         </div>
     </section>
 
-    <section class="miperfil">
+    <section  class="miperfil">
         <div class="row">
           <div id="Anmleft" class="large-4 columns box ">
             <center><h3>Diseñador UI / UX</h3></center>
@@ -83,7 +84,7 @@
          
         </div>
     </section>
-    <div class="bg-franjas">
+    <div id="sec3" class="bg-franjas">
       <div class="franja-azul"></div>
       <div class="franja-mitad"></div>
       <div class="franja-amarilla"></div>       
@@ -477,6 +478,7 @@
     <script src="js/vendor/jquery.lettering-0.6.1.min.js"></script>
     <script src="js/vendor/jquery.scrollorama.js"></script>
     <script src="js/personales.js"></script>
+    <script src="js/animatescroll.js"></script>
 
     <script>
       $(document).foundation({

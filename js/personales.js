@@ -49,7 +49,7 @@ $(window).scroll(function(){
 });
 
 
-$("#LinkMenu").click( function(event){
+$("#LinkMenu").click( function animatemenu(event){
 	event.preventDefault();
 	if ($(this).hasClass("isDown") ) {
 		$("#Menu").animate({right: "0"}, 200);			
@@ -61,6 +61,10 @@ $("#LinkMenu").click( function(event){
 	return false;
 });
 
+$(".limenus").on("click", function(){
+	$("#Menu").animate({right:"-100%"}, 200);	
+	$("#LinkMenu").addClass("isDown");
+} );
 
 function actionegocityapp(){
 	$('#Egocityapp').css({left: "0"});

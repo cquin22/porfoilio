@@ -438,10 +438,34 @@ figure {
   max-height: 1600px;
   color: #fff;
   margin-right: -3px;
-  padding: 23px 29px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
   font-weight: lighter;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+}
+.limenus {
+  padding: 1em;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  -webkit-box-shadow: 1px 1px 10px 1px #111;
+  box-shadow: 1px 1px 10px 1px #111;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  border-right: 25px solid #197aa5;
+}
+.limenus:nth-child(2n) {
+  border-right: 25px solid #ffe600;
+}
+.limenus:hover {
+  background: rgba(255,255,255,0.2);
+  color: #222;
 }
 .face {
   background: #222;
