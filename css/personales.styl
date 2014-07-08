@@ -314,10 +314,35 @@ figure
 .box-portafolio
 	background rgba(white,0.1)
 	padding 2em
+	position relative
+	overflow hidden
 	margin-bottom 2px
 	border-left 1px solid color-azul-principal
 	border-right 1px solid color-azul-principal
 	transition all .5s ease-in
+
+.caption
+	width 100%
+	height 100%
+	background rgba(color-cafe-sublime, 1)
+	position absolute
+	bottom -100%
+	left 0
+	opacity 0.7
+	background-image url('../img/layout-code.jpg')
+	background-size cover
+	transition all .1s ease-in
+	span 
+		position absolute
+		width 60px
+		height 60px
+		color white
+		font-size 60px
+		top 50%
+		margin-top -30px
+		left 50%
+		margin-left -30px
+		text-shadow 1px 1px 1px #000
 
 .image-code
 	width 30%
@@ -372,6 +397,52 @@ figure
 		margin-top 0px 
 		color color-amarillo-secundario				
 
+.bg-bigporfolio
+	position fixed
+	width 100%
+	height 100%
+	top 0
+	left -150%
+	z-index 99999999999
+	background white
+	transition all .5s ease-in
+
+.aside-porfolio
+	width 30%
+	height 100%
+	background color-cafe-sublime
+	float left
+	padding 1em
+	p 
+		color white
+	h1 
+		color white
+		font-family: 'Yanone Kaffeesatz', sans-serif
+	span 
+		float right
+		font-size 25px
+		transition all .5s ease-in
+		color white
+		&:hover
+			transform rotate(180deg)
+			color color-amarillo-secundario
+				
+
+.tags
+	p 
+		background color-azul-principal
+		padding .6em
+		display inline-block 
+		margin-right 5px
+		border-radius 25px
+		font-size 12px
+
+.content-porfolio
+	width 70%
+	float left
+	height 100%
+	padding 1em
+		
 
 .top-fixed
 	position fixed
