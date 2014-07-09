@@ -1,7 +1,15 @@
 
 $(document).on("ready", gogogo);
 function gogogo(){
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0,
+	    mobile:       true,       // trigger animations on mobile devices (default is true)
 
+      }
+    );
+    wow.init();
 
 
 //Animaciones hover portafolio 
@@ -51,6 +59,7 @@ $("#LinkMenu").click( function animatemenu(event){
 	} else {
 		$("#Menu").animate({right:"-100%"}, 200);	
 		$(this).addClass("isDown");
+
 	}
 	return false;
 });
@@ -58,12 +67,14 @@ $("#LinkMenu").click( function animatemenu(event){
 $(".limenus").on("click", function(){
 	$("#Menu").animate({right:"-100%"}, 200);	
 	$("#LinkMenu").addClass("isDown");
+	wow.init();
 } );
 
 function actionegocityapp(){
 	$('#Egocityapp').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Egocityapp').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -71,6 +82,7 @@ function actionegocityweb(){
 	$('#Egocityweb').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Egocityweb').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -78,6 +90,7 @@ function actionegocitylp(){
 	$('#Egocitylp').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Egocitylp').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -85,6 +98,7 @@ function cursodjweb(){
 	$('#Cursodjweb').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Cursodjweb').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -92,6 +106,7 @@ function cursodjlp(){
 	$('#Cursodjlp').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Cursodjlp').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -99,6 +114,7 @@ function apic(){
 	$('#Apic').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Apic').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -106,6 +122,7 @@ function sura(){
 	$('#Sura').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Sura').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -113,6 +130,7 @@ function erika(){
 	$('#Erika').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Erika').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -120,6 +138,7 @@ function sillouet(){
 	$('#Sillouet').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Sillouet').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -127,6 +146,7 @@ function apolo(){
 	$('#Apolo').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Apolo').css({left: "-150%"});
+		wow.init();
 	});
 }
 
@@ -134,6 +154,7 @@ function sacu(){
 	$('#Sacu').css({left: "0"});
 	$(".icon-close").on("click", function(){
 		$('#Sacu').css({left: "-150%"});
+		wow.init();
 	});
 }
 

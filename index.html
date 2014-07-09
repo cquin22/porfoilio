@@ -9,6 +9,7 @@
     <title>Cristian Quintero | Front end Developer</title>
     <link rel="stylesheet" href="css/foundation.css" />
      <link rel="stylesheet" href="css/personales.css" />
+     <link rel="stylesheet" href="css/libs/animate.css">
     <script src="js/vendor/modernizr.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
@@ -43,8 +44,9 @@
     </header>
     <section class="bg-head ">
       <div class="textos-slide "> 
-        <center><h1>Frontend </h1><center><h2>Developer</h2></center>
-        <p class="show-for-small-up subtitle"> < > Apasionado por las nuevas tecnologías < /> </p>
+        <center><h1 class="wow slideInRight">Frontend </h1></center>
+        <center><h2 class="wow slideInLeft">Developer</h2></center>
+        <p class="show-for-small-up subtitle wow fadeInDown "> < > Apasionado por las nuevas tecnologías < /> </p>
         <div id="sec1"></div>
       </div>
     </section>
@@ -52,30 +54,30 @@
    
     <section id="sec2" class="miperfil">
         <div class="row">          
-          <center><h3><span class="icon-businessman65"></span>Mi Perfil</h3></center>
-            <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, y el desarrollo de interfaces web Adaptativas
+          <center><h3 class="wow fadeInDown"><span class="icon-businessman65"></span>Mi Perfil</h3></center>
+            <p class="wow bounceInDown center animated">Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, y el desarrollo de interfaces web Adaptativas
             He tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como Scrum, Lean Canvas, y el Lean Startup.</p>
-            <p>Busco siempre espacios para mejorar continuamente como profesional, me gustan los retos donde se pueda innovar y aprender constantemente sobre nuevas tecnologías</p>           
+            <p class="wow bounceInDown center animated">Busco siempre espacios para mejorar continuamente como profesional, me gustan los retos donde se pueda innovar y aprender constantemente sobre nuevas tecnologías</p>           
         </div>
     </section>
 
     <section  class="miperfil">
         <div class="row">
-          <div id="Anmleft" class="large-4 columns box ">
+          <div id="Anmleft" class="large-4 columns box wow slideInLeft">
             <center><h3>Diseñador UI / UX</h3></center>
             </br></br>            
             <center><span class="icon-pencil40 iconBig"></span></center>
             </br></br> 
             <p>Ideal planificando y elaborando interfaces desde su fase inicial, teniendo en cuenta metodologías para mejorar la experiencia de usuario; siempre con la idea del “Frist Mobile” tengo experiencia ideando y prototipando Wireframes, Moqups, y Arquitectura de la información. </p>             
           </div>
-          <div id="Anmcenter" class="large-4 columns box  dark">
+          <div id="Anmcenter" class="large-4 columns box  dark wow fadeInDown">
             <center><h3>Desarrollador Frontend.</h3></center>
             </br></br>            
             <center><span class="icon-html-tag iconBig"></span></center>
             </br></br>            
             <p>Diseño y desarrollo web del lado del cliente. Manejo de tecnologías web cómo HTML5, CSS3. y Javascript . Indagando siempre en el mundo del MVC del lado del frontend busco mejorar los procesos de desarrollo con frameworks cómo angular.js o backbone.js y con sistemas de versionamiento cómo git.</p>             
           </div>
-          <div id="Anmrigth" class="large-4 columns box ">
+          <div id="Anmrigth" class="large-4 columns box wow slideInRight ">
             <center><h3>Aplicativos Móviles</h3></center>
             </br></br>            
             <center><span class="icon-responsive4 iconBig"></span></center>
@@ -91,17 +93,14 @@
       <div class="franja-amarilla"></div>       
     </div>
     <section class="porfolio">
-        <center><h3><span class="icon-black269"></span> Portafolio</h3></center>
-        <div class="large-4 columns">          
-         
-          <img src="img/tech-all.png">         
-        </div>
-        <div class="large-8 columns">
+        <center><h3 class="wow fadeInDown"><span class="icon-black269"></span> Portafolio</h3></center>
+
+        <div class="large-12 columns">
           <ul class="example-orbit-content" data-orbit>
             <li data-orbit-slide="headline-1">
               <div class="large-12 columns ">
-                <a onclick="actionegocityapp()" >
-                  <div class="large-4 columns box-portafolio">
+                <a  onclick="actionegocityapp()" >
+                  <div class="large-4 columns box-portafolio wow fadeInDown">
                     <img class="img-por" src="img/screens/app-egocity.png">
                     <p><strong>Egocity Aplicativo Móvil</strong></br>
                     Sector: Entretenimiento
@@ -111,7 +110,7 @@
                     </div>
                   </div>                
                 </a>
-                <a onclick="actionegocityweb()">
+                <a class="wow fadeInDown" onclick="actionegocityweb()">
                   <div class="large-4 columns box-portafolio">
                     <img class="img-por" src="img/screens/egocityweb.png">
                     <p><strong>Egocity Web Site</strong></br>
@@ -123,7 +122,7 @@
                   </div>               
                 </a>
 
-                <a onclick="actionegocitylp()" >
+                <a class="wow fadeInDown" onclick="actionegocitylp()" >
                   <div class="large-4 columns box-portafolio">
                     <img class="img-por" src="img/screens/egocitylp.png">
                     <p><strong>Egocity Landing Page</strong></br>
@@ -136,7 +135,7 @@
                 </a>                                  
               </div>
               <div class="large-12 columns ">
-                <a onclick="cursodjweb()">
+                <a class="wow fadeInDown" onclick="cursodjweb()">
                   <div class="large-4 columns box-portafolio">
                     <img class="img-por" src="img/screens/cursodj.png">
                     <p><strong>Curso DJ Online Web Site</strong></br>
@@ -148,7 +147,7 @@
                   </div>                
                 </a>
 
-                <a onclick="cursodjlp()">
+                <a class="wow fadeInDown" onclick="cursodjlp()">
                   <div class="large-4 columns box-portafolio">
                     <img class="img-por" src="img/screens/cursodj-landing.png">
                     <p><strong>Curso DJ Online Landing Page</strong></br>
@@ -160,7 +159,7 @@
                   </div>                
                 </a>  
 
-                <a onclick="apic()">
+                <a class="wow fadeInDown" onclick="apic()">
                   <div class="large-4 columns box-portafolio">
                     <img class="img-por" src="img/screens/apic.png">
                     <p><strong>Apic de Colombia</strong></br>
@@ -176,7 +175,7 @@
             </li>
             <li data-orbit-slide="headline-2">
               <div class="large-12 columns ">
-                <a onclick="sura()">
+                <a class="wow fadeInDown" onclick="sura()">
                     <div class="large-4 columns box-portafolio">
                       <img class="img-por" src="img/screens/sura.png">
                       <p><strong>Sembradores SURA</strong></br>
@@ -187,7 +186,7 @@
                     </div>                    
                     </div>                  
                 </a>
-                <a onclick="erika()">
+                <a class="wow fadeInDown" onclick="erika()">
                   <div class="large-4 columns box-portafolio">
                     <img class="img-por" src="img/screens/erikah.png">
                       <p><strong>Erika-ache </strong></br>
@@ -199,7 +198,7 @@
                   </div>                
                 </a>
 
-                <a onclick="sillouet()">
+                <a class="wow fadeInDown" onclick="sillouet()">
                   <div class="large-4 columns box-portafolio">
                     <img class="img-por" src="img/screens/silluete.png">
                       <p><strong>Sillouete Glamour </strong></br>
@@ -253,7 +252,7 @@
 
     <section class="fortalezas">
       <div class="row">
-        <center><p>"La única parte donde el ‘éxito’ aparece antes que el "trabajo" es en el diccionario". <span class="author">Vidal Sasoon</span></p></center>
+        <center><p class="wow lightSpeedIn animated">"La única parte donde el ‘éxito’ aparece antes que el "trabajo" es en el diccionario". <span class="author">Vidal Sasoon</span></p></center>
 
       </div>
      
@@ -278,7 +277,7 @@
 
   </div>
 
-<div id="Egocityapp" class="bg-bigporfolio">
+<div id="Egocityapp" class="bg-bigporfolio ">
   <div class="aside-porfolio">
     <a ><span class="icon-close"></span></a>
     <h1>Egocity Aplicativo Móvil</h1>
@@ -290,7 +289,7 @@
       <p>Phonegap</p> 
     </div>
   </div>
-  <div class="content-porfolio">
+  <div class="content-porfolio wow bounceInDown center animated">
     <img  src="img/screens/app-egocity.png">
     <div class="large-3 columns">
       <a target="blank" href="https://itunes.apple.com/us/app/egocity-mgz/id877675132?l=es&ls=1&mt=8"><img src="img/app_store.png"></a>
@@ -494,10 +493,12 @@
     <a href="http://www.sacu.com.co/" target="blank" class="button"><span class="icon-fingerprint43"></span> Ver Sitio Web</a>
   </div>  
 </div>
+    <script src="js/vendor/wow.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/personales.js"></script>
     <script src="js/vendor/animatescroll.js"></script>
+    
 
     <script>
       $(document).foundation({
