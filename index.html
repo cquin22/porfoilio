@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/foundation.css" />
      <link rel="stylesheet" href="css/personales.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
   </head>
-  <body class="myBody"  >
+  <body >
 
 <div id="Menu"  class="menu">
   <ul>
@@ -19,21 +21,20 @@
     <a class="limenus"   onclick="$('#sec2').animatescroll({padding: 20});"><li><span class="icon-data45"></span> Competencias</li></a>
     <a class="limenus"   onclick="$('#sec3').animatescroll({padding: 20});"><li><span class="icon-html10"></span> Portafolio</li></a>
     <!--<a class="limenus" href=""><li>Blog</li></a>-->
-    <a class="limenus" href=""><li><span class="icon-email34"></span> Contáctame</li></a> 
+    <a class="limenus" onclick="$('#sec4').animatescroll({padding: 20});"><li><span class="icon-email34"></span> Contáctame</li></a> 
   </ul>
 </div>
 
   <div  >  
     <header id="Header" >
-      <figure class="logo">
+      <figure class="hide-for-small-only logo">
         <img src="img/logo-light.png">
       </figure>
       <nav>
         <ul>
  
-          <a class="face" href=""><li ><span class="icon-facebook5"></span></li></a>
-          <a class="twitter" href=""><li ><span class="icon-social19"></span></li></a>
-          <a class="google" href=""><li ><span class="icon-google10"></span></li></a>
+          <a target="blank" class="face" href="https://www.facebook.com/cquinro22"><li ><span class="icon-facebook5"></span></li></a>
+          <a target="blank" class="twitter" href="https://twitter.com/cquin22"><li ><span class="icon-social19"></span></li></a>          
           <a id="LinkMenu" class="icon-menu isDown" ><li  ><span class="icon-arrow299"></span></li></a>
           <a  href=""><li ></li></a>
 
@@ -90,155 +91,155 @@
       <div class="franja-amarilla"></div>       
     </div>
     <section class="porfolio">
+        <center><h3><span class="icon-black269"></span> Portafolio</h3></center>
         <div class="large-4 columns">          
-          <center><h3><span class="icon-black269"></span> Portafolio</h3></center>
-          <p>Apasionado por la tecnología, la innovación y el desarrollo de metodologías ágiles, he participado en proyectos como Front end Developer, Desarrollo de interfases web Adaptativas.
-          Tambien he tenido la oportunidad de participar en la consolidación de StartUps desde su fase de prototipado a fases de aceleración aplicando métodos ágiles como el Lean Canvas, y el Lean Startup. </p>          
+         
+          <img src="img/tech-all.png">         
         </div>
         <div class="large-8 columns">
-        <ul class="example-orbit-content" data-orbit>
-          <li data-orbit-slide="headline-1">
-            <div class="large-12 columns ">
-              <a onclick="actionegocityapp()" >
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/app-egocity.png">
-                  <p><strong>Egocity Aplicativo Móvil</strong></br>
-                  Sector: Entretenimiento
-                  </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>
-                </div>                
-              </a>
-              <a onclick="actionegocityweb()">
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/egocityweb.png">
-                  <p><strong>Egocity Web Site</strong></br>
-                  Sector: Entretenimiento
-                  </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                  
-                </div>               
-              </a>
-
-              <a onclick="actionegocitylp()" >
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/egocitylp.png">
-                  <p><strong>Egocity Landing Page</strong></br>
-                  Sector: Entretenimiento
-                  </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                  
-                </div>                
-              </a>                                  
-            </div>
-            <div class="large-12 columns ">
-              <a onclick="cursodjweb()">
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/cursodj.png">
-                  <p><strong>Curso DJ Online Web Site</strong></br>
-                  Sector: Entretenimiento
-                  </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                  
-                </div>                
-              </a>
-
-              <a onclick="cursodjlp()">
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/cursodj-landing.png">
-                  <p><strong>Curso DJ Online Landing Page</strong></br>
-                  Sector: Entretenimiento
-                  </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                  
-                </div>                
-              </a>  
-
-              <a onclick="apic()">
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/apic.png">
-                  <p><strong>Apic de Colombia</strong></br>
-                  Sector: Construcción
-                  </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                  
-                </div>                
-              </a>
-                                  
-            </div>
-          </li>
-          <li data-orbit-slide="headline-2">
-            <div class="large-12 columns ">
-              <a onclick="sura()">
+          <ul class="example-orbit-content" data-orbit>
+            <li data-orbit-slide="headline-1">
+              <div class="large-12 columns ">
+                <a onclick="actionegocityapp()" >
                   <div class="large-4 columns box-portafolio">
-                    <img class="img-por" src="img/screens/sura.png">
-                    <p><strong>Sembradores SURA</strong></br>
-                    Sector: Corporativo
+                    <img class="img-por" src="img/screens/app-egocity.png">
+                    <p><strong>Egocity Aplicativo Móvil</strong></br>
+                    Sector: Entretenimiento
                     </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                    
-                  </div>                  
-              </a>
-              <a onclick="erika()">
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/erikah.png">
-                    <p><strong>Erika-ache </strong></br>
-                      Sector: Lenceria
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>
+                  </div>                
+                </a>
+                <a onclick="actionegocityweb()">
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/egocityweb.png">
+                    <p><strong>Egocity Web Site</strong></br>
+                    Sector: Entretenimiento
                     </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                    
-                </div>                
-              </a>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                  
+                  </div>               
+                </a>
 
-              <a onclick="sillouet()">
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/silluete.png">
-                    <p><strong>Sillouete Glamour </strong></br>
-                      Sector: Lenceria
+                <a onclick="actionegocitylp()" >
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/egocitylp.png">
+                    <p><strong>Egocity Landing Page</strong></br>
+                    Sector: Entretenimiento
                     </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                    
-                </div>                
-              </a>
-                                  
-            </div>
-            <div class="large-12 columns ">
-              <a onclick="apolo()">
-                <div class="large-4 columns box-portafolio">
-                  <img class="img-por" src="img/screens/apolo.png">
-                    <p><strong>Consorcio Apolo </strong></br>
-                      Sector: Comercio Aduanero
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                  
+                  </div>                
+                </a>                                  
+              </div>
+              <div class="large-12 columns ">
+                <a onclick="cursodjweb()">
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/cursodj.png">
+                    <p><strong>Curso DJ Online Web Site</strong></br>
+                    Sector: Entretenimiento
                     </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                    
-                </div>                
-              </a>
-              <a onclick="sacu()">
-                <div class="large-4 columns end box-portafolio">
-                  <img src="img/screens/sacu.png">
-                    <p><strong>Sacu </strong></br>
-                      Sector: CRM
-                    </p>
-                  <div class="caption">
-                    <span class="icon-link3"></span>
-                  </div>                    
-                </div>                
-              </a>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                  
+                  </div>                
+                </a>
 
-                                  
-            </div>
-          </li>
-        </ul>          
+                <a onclick="cursodjlp()">
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/cursodj-landing.png">
+                    <p><strong>Curso DJ Online Landing Page</strong></br>
+                    Sector: Entretenimiento
+                    </p>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                  
+                  </div>                
+                </a>  
+
+                <a onclick="apic()">
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/apic.png">
+                    <p><strong>Apic de Colombia</strong></br>
+                    Sector: Construcción
+                    </p>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                  
+                  </div>                
+                </a>
+                                    
+              </div>
+            </li>
+            <li data-orbit-slide="headline-2">
+              <div class="large-12 columns ">
+                <a onclick="sura()">
+                    <div class="large-4 columns box-portafolio">
+                      <img class="img-por" src="img/screens/sura.png">
+                      <p><strong>Sembradores SURA</strong></br>
+                      Sector: Corporativo
+                      </p>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                    
+                    </div>                  
+                </a>
+                <a onclick="erika()">
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/erikah.png">
+                      <p><strong>Erika-ache </strong></br>
+                        Sector: Lenceria
+                      </p>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                    
+                  </div>                
+                </a>
+
+                <a onclick="sillouet()">
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/silluete.png">
+                      <p><strong>Sillouete Glamour </strong></br>
+                        Sector: Lenceria
+                      </p>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                    
+                  </div>                
+                </a>
+                                    
+              </div>
+              <div class="large-12 columns ">
+                <a onclick="apolo()">
+                  <div class="large-4 columns box-portafolio">
+                    <img class="img-por" src="img/screens/apolo.png">
+                      <p><strong>Consorcio Apolo </strong></br>
+                        Sector: Comercio Aduanero
+                      </p>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                    
+                  </div>                
+                </a>
+                <a onclick="sacu()">
+                  <div class="large-4 columns end box-portafolio">
+                    <img src="img/screens/sacu.png">
+                      <p><strong>Sacu </strong></br>
+                        Sector: CRM
+                      </p>
+                    <div class="caption">
+                      <span class="icon-link3"></span>
+                    </div>                    
+                  </div>                
+                </a>
+
+                                    
+              </div>
+            </li>
+          </ul>          
         <a data-orbit-link="headline-1" class="smallbutton">
           1
         </a>
@@ -250,10 +251,30 @@
         </div>
     </section>
 
-    <section>
-      sfd
+    <section class="fortalezas">
+      <div class="row">
+        <center><p>"La única parte donde el ‘éxito’ aparece antes que el "trabajo" es en el diccionario". <span class="author">Vidal Sasoon</span></p></center>
+
+      </div>
+     
     </section>
 
+    <section id="sec4" class="map">
+      <div id="map-canvas">
+        <p style="position: relative; z-index: 9999999999999999999999999999999999;">Hola</p>
+      </div>
+    </section>
+
+    <footer class="bg-footer">
+      <div class="row footer">
+        <p>Sitio web construido con tecnologías: |</p>
+        <p><span class="icon-html3"></span> | </p>
+        <p><span class="icon-css1"></span> | </p>
+        <p><span class="icon-js1"></span> | </p>
+        <p>cristianqr22@gmail.com | </p>
+        <p>2014 </p>
+      </div>
+    </footer>
 
   </div>
 
@@ -475,10 +496,8 @@
 </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/vendor/jquery.lettering-0.6.1.min.js"></script>
-    <script src="js/vendor/jquery.scrollorama.js"></script>
     <script src="js/personales.js"></script>
-    <script src="js/animatescroll.js"></script>
+    <script src="js/vendor/animatescroll.js"></script>
 
     <script>
       $(document).foundation({

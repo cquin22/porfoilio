@@ -1,13 +1,7 @@
 
 $(document).on("ready", gogogo);
 function gogogo(){
-    var scrollorama = $.scrollorama({
-        blocks:'.myBody'
-    });
-    //scrollorama.animate('#Header',{ delay: 400, duration: 600, property:'top', start:0, end:0, });
-    scrollorama.animate('#Anmleft',{ duration: 500, property:'left', start:-1500,end:0});
-    scrollorama.animate('#Anmcenter',{ duration: 700, property:'opacity', start:0,end:1});
-    scrollorama.animate('#Anmrigth',{ duration: 500, property:'right', start:-1500,end:0});
+
 
 
 //Animaciones hover portafolio 
@@ -142,3 +136,92 @@ function sacu(){
 		$('#Sacu').css({left: "-150%"});
 	});
 }
+
+
+
+
+
+var map;
+var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+
+var MY_MAPTYPE_ID = 'custom_style';
+
+function initialize() {
+
+  var featureOpts = [
+    {
+      stylers: [
+        { hue: '#197AA5' },
+        { visibility: 'simplified' },
+        { gamma: 0.9 },
+        { weight: 0.9 }
+      ]
+    },
+    {
+      elementType: 'labels',
+      stylers: [
+        { visibility: 'on' }
+      ]
+    },
+    {
+      featureType: 'water',
+      stylers: [
+        { color: '#197AA5' }
+      ]
+    }
+  ];
+
+  var mapOptions = {
+    zoom: 16,
+    zoomControl: false,
+    center: new google.maps.LatLng(6.151103, -75.618198),
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    },
+    mapTypeId: MY_MAPTYPE_ID
+  };
+
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  var styledMapOptions = {
+    name: 'Custom Style'
+  };
+
+  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+
+
+  var contentString = '<div class="box-map">'+
+  '<p>Cristian Quintero Rodriguez</p>' +
+  '<p><span class="icon-apple4"></span>  311 2043337</p>' +
+  '<p><span class="icon-fingerprint43"></span> (57-4) 3015785</p>' +
+  '<p><span class="icon-email34"></span> cristianqr22@gmail.com</p>' +
+
+  '</div>'
+  ;
+
+
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+
+  var image = 'img/map.png';
+  var myLatLng = new google.maps.LatLng(6.151103, -75.618198);
+  var beachMarker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+  });
+
+  google.maps.event.addListener(map, 'mouseover', function() {
+    infowindow.open(map,beachMarker);
+  });
+
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);

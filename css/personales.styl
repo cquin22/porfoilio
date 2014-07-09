@@ -54,6 +54,10 @@ figure
 	margin 0
 	padding 0		
 
+#map-canvas
+	width 100%
+	height 300px
+
 .logo 
 	margin 0
 	height 70px
@@ -98,6 +102,11 @@ figure
 		background rgba(white, 0.2)
 		color #222
 
+.sec-bottom
+	padding 1em
+	span
+		font-size 50px
+		color color-cafe-sublime
 
 .face 
 	background #222
@@ -254,6 +263,28 @@ figure
 
 .fortalezas
 	background url('../img/mosaico.jpg')
+	height 200px
+	position relative
+	p 
+		background rgba(white, 0.7)
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		padding .5em
+		width 66%
+		position absolute
+		top 50%
+		margin-top -41px
+		height 82px
+		color color-cafe-sublime
+		text-shadow 1px 1px 1px #ccc
+		text-align center
+		font-size 25px
+		text-transform uppercase
+
+.author
+	font-size 15px
+	margin 0
+	color #333
+	font-style italic
 
 .iconBig
 	font-size 50px
@@ -318,6 +349,7 @@ figure
 		font-weight bold
 		font-size 2em
 		text-shadow 1px 1px 1px black
+		margin-bottom 1em
 	p 
 		color white
 		font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -443,6 +475,11 @@ figure
 		&:hover
 			transform rotate(180deg)
 			color color-amarillo-secundario
+
+.box-map
+	p 
+		margin 0
+
 				
 
 .tags
@@ -464,9 +501,22 @@ figure
 .top-fixed
 	position fixed
 	z-index 200
-	background rgba(color-cafe-sublime, 0.7)
+	background rgba(color-cafe-sublime, 0.9)
 	top 0
 	left 0
+
+.bg-footer
+	background color-cafe-sublime
+	padding .4em
+
+.footer
+	text-align center
+	p 
+		color white
+		display inline-block
+		margin 0
+		padding 0
+		font-size 13px
 
 
 @media only screen and (min-width: 0px) and (max-width: 600px){
@@ -492,7 +542,29 @@ figure
 	width 100%
 	height 400px
 	}
+
+.aside-porfolio {
+	width 100%
+	float none
+	height 250px
 }
+
+.aside-porfolio p {
+	margin 0
+	padding 0
+	font-size 12px
+}
+
+.content-porfolio {
+	width 100%
+	float none
+}
+
+.bg-bigporfolio {
+	overflow scroll
+	}
+}
+
 
 
 @media only screen and (min-width: 806px) and (max-width: 900px){

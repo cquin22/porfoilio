@@ -415,6 +415,10 @@ figure {
   margin: 0;
   padding: 0;
 }
+#map-canvas {
+  width: 100%;
+  height: 300px;
+}
 .logo {
   margin: 0;
   height: 70px;
@@ -466,6 +470,13 @@ figure {
 .limenus:hover {
   background: rgba(255,255,255,0.2);
   color: #222;
+}
+.sec-bottom {
+  padding: 1em;
+}
+.sec-bottom span {
+  font-size: 50px;
+  color: #272822;
 }
 .face {
   background: #222;
@@ -652,6 +663,29 @@ figure {
 }
 .fortalezas {
   background: url("../img/mosaico.jpg");
+  height: 200px;
+  position: relative;
+}
+.fortalezas p {
+  background: rgba(255,255,255,0.7);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding: 0.5em;
+  width: 66%;
+  position: absolute;
+  top: 50%;
+  margin-top: -41px;
+  height: 82px;
+  color: #272822;
+  text-shadow: 1px 1px 1px #ccc;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.author {
+  font-size: 15px;
+  margin: 0;
+  color: #333;
+  font-style: italic;
 }
 .iconBig {
   font-size: 50px;
@@ -733,6 +767,7 @@ figure {
   font-weight: bold;
   font-size: 2em;
   text-shadow: 1px 1px 1px #000;
+  margin-bottom: 1em;
 }
 .porfolio p {
   color: #fff;
@@ -897,6 +932,9 @@ figure {
   transform: rotate(180deg);
   color: #ffe600;
 }
+.box-map p {
+  margin: 0;
+}
 .tags p {
   background: #197aa5;
   padding: 0.6em;
@@ -915,9 +953,23 @@ figure {
 .top-fixed {
   position: fixed;
   z-index: 200;
-  background: rgba(39,40,34,0.7);
+  background: rgba(39,40,34,0.9);
   top: 0;
   left: 0;
+}
+.bg-footer {
+  background: #272822;
+  padding: 0.4em;
+}
+.footer {
+  text-align: center;
+}
+.footer p {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
 }
 @media only screen and (min-width: 0px) and (max-width: 600px) {
   .textos-slide {
@@ -937,5 +989,22 @@ figure {
     background-size: cover;
     width: 100%;
     height: 400px;
+  }
+  .aside-porfolio {
+    width: 100%;
+    float: none;
+    height: 250px;
+  }
+  .aside-porfolio p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .content-porfolio {
+    width: 100%;
+    float: none;
+  }
+  .bg-bigporfolio {
+    overflow: scroll;
   }
 }
