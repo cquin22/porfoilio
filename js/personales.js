@@ -221,6 +221,9 @@ function initialize() {
     infowindow.open(map,beachMarker);
   });
 
+  google.maps.event.addListener(map, 'click', function() {
+    infowindow.open(map,beachMarker);
+  });
 
 }
 
